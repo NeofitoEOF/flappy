@@ -1,29 +1,26 @@
 * {
     box-sizing: border-box;
-   
-}
-h1 {
-    text-align: center;
 }
 
 @font-face {
     font-family: 'Pixel';
     src: url('../fonts/Pixel.ttf');
 }
+
 [wm-flappy] {
     position: relative;
     border: 5px solid dodgerblue;
     height: 500px;
     width: 1000px;
-    margin: 3px;
-    background-color: #29a029;
+    margin: 15px;
+    background-color: deepskyblue;
     overflow: hidden;
 }
 
 .passaro {
     position: absolute;
     width: 60px;
-    left: calc(50% -30%);
+    left: calc(50% - 30px);
 }
 
 .par-de-barreiras {
@@ -32,7 +29,7 @@ h1 {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .barreira {
@@ -51,16 +48,23 @@ h1 {
 .barreira .corpo {
     height: 150px;
     width: 110px;
-    background: linear-gradient((90deg, #639301, #a5e82e));
+    background: linear-gradient(90deg, #639301, #A5E82E);
     border-left: 2px solid #000;
     border-right: 2px solid #000;
 }
 
-.processo {
+.progresso {
     position: absolute;
     top: 10px;
     right: 10px;
     font-family: Pixel;
     font-size: 70px;
     z-index: 100;
+}
+
+body {
+    background-color: darkblue;
+}
+h1 {
+    text-align: center;
 }
